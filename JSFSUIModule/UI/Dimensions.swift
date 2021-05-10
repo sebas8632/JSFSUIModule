@@ -7,22 +7,22 @@
 
 import Foundation
 import UIKit
-struct Dimensions {
+public struct Dimensions {
     
-    struct Margin {
+   public struct Margin {
         static let xSmall: CGFloat = 4
         static let small: CGFloat = 8
         static let medium: CGFloat = 16
         static let large: CGFloat = 24
     }
     
-    struct NegativeMargin {
+   public struct NegativeMargin {
         static let xSmall: CGFloat = -4
         static let small: CGFloat = -8
         static let medium: CGFloat = -16
         static let large: CGFloat = -24
     }
     
-    static let zero: CGFloat = 0
+   public static let zero: CGFloat = 0
 
 }
