@@ -8,17 +8,19 @@
 import Foundation
 import UIKit
 extension UIView {
-    
+
     public func addSubViewsAndActiveAutoLayout(_ subviews: [UIView]) {
         subviews.forEach(self.addSubviews)
     }
-    
+
     public func addSubviews(_ subview: UIView) {
         subview.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(subview)
     }
-    
-    public func fullconstraintView(_ view: UIView, _ verticalDimension: CGFloat = Dimensions.zero, _ horizontalDimension: CGFloat = Dimensions.zero) {
+
+    public func fullconstraintView(_ view: UIView,
+                                   _ verticalDimension: CGFloat = Dimensions.zero,
+                                   _ horizontalDimension: CGFloat = Dimensions.zero) {
         NSLayoutConstraint.activate([
             self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: horizontalDimension),
             self.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0 - horizontalDimension),
@@ -26,7 +28,7 @@ extension UIView {
             self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0 - verticalDimension)
         ])
     }
-    
+
     public func fullConstraintViewSafeArea(_ view: UILayoutGuide, _ dimension: CGFloat = 0) {
         NSLayoutConstraint.activate([
             self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: dimension),
@@ -35,7 +37,7 @@ extension UIView {
             self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0 - dimension)
         ])
     }
-    
+
     public func setSizeImageEqually(_ size: CGFloat) {
         NSLayoutConstraint.activate([
             self.heightAnchor.constraint(equalToConstant: size),
@@ -68,5 +70,4 @@ extension UIView {
         }
     }
  */
-    
 }
