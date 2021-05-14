@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 public struct ConstraintModel {
-    var trailingView: UIView
-    var trailingValue: CGFloat
-    var leadingView: UIView
-    var leadingValue: CGFloat
-    var topView: UIView
-    var topValue: CGFloat
-    var bottomView: UIView
-    var bottomValue: CGFloat
+    public var trailingView: UIView
+    public var trailingValue: CGFloat
+    public var leadingView: UIView
+    public var leadingValue: CGFloat
+    public var topView: UIView
+    public var topValue: CGFloat
+    public var bottomView: UIView
+    public var bottomValue: CGFloat
 }
