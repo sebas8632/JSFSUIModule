@@ -37,6 +37,15 @@ extension UIView {
             self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0 - dimension)
         ])
     }
+    
+    public func fullConstraintView(constraintModel: ConstraintModel) {
+        NSLayoutConstraint.activate([
+            self.leadingAnchor.constraint(equalTo: constraintModel.leadingView.leadingAnchor, constant: constraintModel.leadingValue),
+            self.trailingAnchor.constraint(equalTo: constraintModel.trailingView.trailingAnchor, constant: 0 - constraintModel.trailingValue),
+            self.topAnchor.constraint(equalTo: constraintModel.topView.topAnchor, constant: constraintModel.topValue),
+            self.bottomAnchor.constraint(equalTo: constraintModel.bottomView.bottomAnchor, constant: 0 - constraintModel.bottomValue)
+        ])
+    }
 
     public func setSizeImageEqually(_ size: CGFloat) {
         NSLayoutConstraint.activate([
