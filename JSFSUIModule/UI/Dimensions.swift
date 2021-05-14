@@ -10,17 +10,17 @@ import UIKit
 public struct Dimensions {
 
    public struct Margin {
-        static let xSmall: CGFloat = 4
-        static let small: CGFloat = 8
-        static let medium: CGFloat = 16
-        static let large: CGFloat = 24
+        public static let xSmall: CGFloat = 4
+        public static let small: CGFloat = 8
+        public static let medium: CGFloat = 16
+        public static let large: CGFloat = 24
     }
 
    public struct NegativeMargin {
-        static let xSmall: CGFloat = -4
-        static let small: CGFloat = -8
-        static let medium: CGFloat = -16
-        static let large: CGFloat = -24
+    public static let xSmall: CGFloat = -4
+    public static let small: CGFloat = -8
+    public static let medium: CGFloat = -16
+    public static let large: CGFloat = -24
     }
 
    public static let zero: CGFloat = 0
